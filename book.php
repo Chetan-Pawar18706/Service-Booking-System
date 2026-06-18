@@ -92,8 +92,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                     $ust->close();
                 }
 
-                echo "<!DOCTYPE html><html><head><meta charset='utf-8'><title>Booking Confirmed</title><link rel='stylesheet' href='assets/css/style.css'></head><body><div class='container'><div class='card' style='max-width:600px;margin:40px auto'><h2 class='h1'>✅ Booking Successful!</h2><p class='small' style='margin:12px 0'>Your booking has been confirmed. You can now view and manage your bookings.</p><div style='display:flex;gap:12px;margin-top:18px'><a href='my_booking.php' class='btn'>📋 View My Bookings</a><a href='dashbord.php' class='btn secondary'>⬅️ Back to Dashboard</a></div></div></div></body></html>";
-                exit;
+                $_SESSION['flash_success'] = 'Booking successful. Your booking has been confirmed.';
+                header('Location: my_booking.php');
+                exit();
             } else {
                 $error = "Booking failed: " . htmlspecialchars($conn->error);
             }

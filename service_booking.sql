@@ -1,5 +1,5 @@
--- CREATE DATABASE service_booking;
--- USE service_booking;
+CREATE DATABASE service_booking;
+USE service_booking;
 
 
 

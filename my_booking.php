@@ -2,6 +2,10 @@
 include('db.php');
 session_start();
 
+$success_msg = $_SESSION['flash_success'] ?? '';
+$error_msg = $_SESSION['flash_error'] ?? '';
+unset($_SESSION['flash_success'], $_SESSION['flash_error']);
+
 // Ensure user is logged in
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     header('Location: login.php');
@@ -59,6 +63,12 @@ if (!$res || $res->num_rows === 0) {
             <div class="logo">My Bookings</div>
             <div class="nav"><a href="dashbord.php">Back to Dashboard</a></div>
         </div>
+        <?php if (!empty($success_msg)): ?>
+            <div class="alert success"><?php echo htmlspecialchars($success_msg); ?></div>
+        <?php endif; ?>
+        <?php if (!empty($error_msg)): ?>
+            <div class="alert error"><?php echo htmlspecialchars($error_msg); ?></div>
+        <?php endif; ?>
         <div class="card" style="margin-top:18px">
             <p class="small">You have no bookings.</p>
             <a href="dashbord.php" class="btn" style="margin-top:12px">Browse Services</a>
@@ -90,6 +100,13 @@ $stmt->close();
         <div class="logo">My Bookings</div>
         <div class="nav"><a href="dashbord.php">Back to Dashboard</a></div>
     </div>
+
+    <?php if (!empty($success_msg)): ?>
+        <div class="alert success"><?php echo htmlspecialchars($success_msg); ?></div>
+    <?php endif; ?>
+    <?php if (!empty($error_msg)): ?>
+        <div class="alert error"><?php echo htmlspecialchars($error_msg); ?></div>
+    <?php endif; ?>
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px;margin-top:18px">
         <?php foreach($bookings as $row): ?>
