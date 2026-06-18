@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="64" viewBox="0 0 220 64" role="img" aria-labelledby="title desc">
+  <title id="title">Astra Service logo</title>
+  <desc id="desc">A stylized home and service spark mark with the Astra Service wordmark.</desc>
+  <defs>
+    <linearGradient id="mark" x1="8" x2="58" y1="8" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="word" x1="72" x2="210" y1="14" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#cbd5e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#0f172a"/>
+  <path d="M15 33.5 32 18l17 15.5v15.2a4.3 4.3 0 0 1-4.3 4.3H19.3a4.3 4.3 0 0 1-4.3-4.3V33.5Z" fill="url(#mark)"/>
+  <path d="M25 52V38.8h14V52" fill="#0f172a" opacity=".86"/>
+  <path d="m46.5 14 2.7 6 6.3 2.5-6.3 2.5-2.7 6-2.7-6-6.3-2.5 6.3-2.5 2.7-6Z" fill="#f8fafc"/>
+  <text x="76" y="30" fill="url(#word)" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="0">Astra</text>
+  <text x="76" y="50" fill="#94a3b8" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" letter-spacing="0">Service</text>
+</svg>

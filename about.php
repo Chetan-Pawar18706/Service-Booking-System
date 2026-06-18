@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Astra Service Booking</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         * {
@@ -423,9 +424,9 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <div class="logo">✨ Astra Service</div>
+            <div class="logo">&#x2728; Astra Service</div>
             <ul class="nav-links">
-                <li><a href="welcome.php">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
             </ul>
@@ -438,7 +439,7 @@
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <a href="welcome.php">Home</a> / <span style="color: #a8b8c8;">About Us</span>
+        <a href="index.php">Home</a> / <span style="color: #a8b8c8;">About Us</span>
     </div>
 
     <!-- Hero Section -->
@@ -458,12 +459,12 @@
                 <p>Astra Service started with a simple vision: to make professional services accessible to everyone. Founded in 2020, we recognized a gap in the market for a reliable, user-friendly platform that connects service seekers with qualified professionals.</p>
                 <p>What began as a small startup has grown into a trusted platform serving thousands of customers across the region. We've remained committed to our core mission of delivering quality services at affordable prices.</p>
             </div>
-            <div class="two-column-image">📖</div>
+            <div class="two-column-image">&#x1F4D6;</div>
         </div>
 
         <!-- Our Mission & Vision -->
         <div class="two-column" style="direction: rtl;">
-            <div class="two-column-image" style="direction: ltr;">🎯</div>
+            <div class="two-column-image" style="direction: ltr;">&#x1F3AF;</div>
             <div class="two-column-text" style="direction: ltr;">
                 <h3>Mission & Vision</h3>
                 <p><strong>Mission:</strong> To empower service professionals and customers through a seamless, secure, and innovative booking platform that builds trust and delivers excellence.</p>
@@ -486,7 +487,7 @@
                 <div class="stat-label">Bookings Completed</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">4.8★</div>
+                <div class="stat-number">4.8&#x2605;</div>
                 <div class="stat-label">Average Rating</div>
             </div>
         </div>
@@ -495,32 +496,32 @@
         <h2 class="section-title">Our Core Values</h2>
         <div class="values-grid">
             <div class="value-card">
-                <div class="value-icon">🤝</div>
+                <div class="value-icon">&#x1F91D;</div>
                 <h3>Trust</h3>
                 <p>We build lasting relationships based on transparency, honesty, and reliability. Your trust is our most valuable asset.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">✨</div>
+                <div class="value-icon">&#x2728;</div>
                 <h3>Excellence</h3>
                 <p>We maintain the highest standards in everything we do, from our platform to our customer service.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">🌍</div>
+                <div class="value-icon">&#x1F30D;</div>
                 <h3>Accessibility</h3>
                 <p>Making quality services available to everyone, regardless of their location or circumstances.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">💡</div>
+                <div class="value-icon">&#x1F4A1;</div>
                 <h3>Innovation</h3>
                 <p>Continuously improving our platform with cutting-edge technology and user-centric features.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">🛡️</div>
+                <div class="value-icon">&#x1F6E1;&#xFE0F;</div>
                 <h3>Security</h3>
                 <p>Protecting your data and privacy with enterprise-grade security measures.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">❤️</div>
+                <div class="value-icon">&#x2764;&#xFE0F;</div>
                 <h3>Customer Care</h3>
                 <p>Your satisfaction is our priority. We're here to support you 24/7.</p>
             </div>
@@ -530,7 +531,7 @@
         <h2 class="section-title" style="margin-top: 80px;">Our Leadership Team</h2>
         <div class="team-grid">
             <div class="team-member">
-                <div class="member-image">👨‍💼</div>
+                <div class="member-image">&#x1F468;&#x200D;&#x1F4BB;</div>
                 <div class="member-info">
                     <div class="member-name">Rajesh Kumar</div>
                     <div class="member-role">Founder & CEO</div>
@@ -538,7 +539,7 @@
                 </div>
             </div>
             <div class="team-member">
-                <div class="member-image">👩‍💻</div>
+                <div class="member-image">&#x1F9D1;&#x200D;&#x1F4BC;</div>
                 <div class="member-info">
                     <div class="member-name">Priya Sharma</div>
                     <div class="member-role">CTO</div>
@@ -546,7 +547,7 @@
                 </div>
             </div>
             <div class="team-member">
-                <div class="member-image">👨‍💼</div>
+                <div class="member-image">&#x1F468;&#x200D;&#x1F4BB;</div>
                 <div class="member-info">
                     <div class="member-name">Amit Patel</div>
                     <div class="member-role">COO</div>
@@ -559,32 +560,32 @@
         <h2 class="section-title" style="margin-top: 80px;">Why Choose Astra?</h2>
         <div class="values-grid">
             <div class="value-card">
-                <div class="value-icon">⚡</div>
+                <div class="value-icon">&#x26A1;</div>
                 <h3>Speed & Efficiency</h3>
                 <p>Fast booking process with instant confirmations and real-time updates on your service requests.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">💰</div>
+                <div class="value-icon">&#x1F4B0;</div>
                 <h3>Best Prices</h3>
                 <p>Competitive rates with no hidden charges. See exactly what you'll pay before confirming.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">✅</div>
+                <div class="value-icon">&#x2714;</div>
                 <h3>Verified Professionals</h3>
                 <p>All service providers are vetted and verified for quality and reliability.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">📱</div>
+                <div class="value-icon">&#x1F4C8;</div>
                 <h3>User-Friendly App</h3>
                 <p>Intuitive interface designed for maximum convenience and ease of use.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">🏆</div>
+                <div class="value-icon">&#x1F4AA;</div>
                 <h3>Quality Guarantee</h3>
                 <p>We stand behind our services with a satisfaction guarantee.</p>
             </div>
             <div class="value-card">
-                <div class="value-icon">📊</div>
+                <div class="value-icon">&#x1F4CA;</div>
                 <h3>Transparent Ratings</h3>
                 <p>Honest reviews and ratings to help you make informed decisions.</p>
             </div>
@@ -610,3 +611,5 @@
     </footer>
 </body>
 </html>
+
+

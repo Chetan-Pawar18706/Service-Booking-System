@@ -13,7 +13,7 @@ if (isset($_POST["btnlogin"])) {
     if ($email === '' || $password === '') {
         $error = "Please enter email/username and password.";
     } else {
-        $stmt = $conn->prepare("SELECT id, username, password FROM users WHERE email = ? OR username = ? LIMIT 1");
+        $stmt = $conn->prepare("SELECT id, username, password, role FROM users WHERE email = ? OR username = ? LIMIT 1");
 
         if ($stmt) {
             $stmt->bind_param('ss', $email, $email);
@@ -29,13 +29,22 @@ if (isset($_POST["btnlogin"])) {
                     $_SESSION['loggedin'] = true;
                     $_SESSION['user_id'] = (int)$row['id'];
                     $_SESSION['username'] = $row['username'];
+                    $_SESSION['role'] = $row['role'] ?? 'user';
 
-                    if ($row['username'] === 'admin') {
-                        header('Location: admindashbord.php');
-                        exit();
+                    // Redirect based on role
+                    $role = $row['role'] ?? 'user';
+                    switch ($role) {
+                        case 'admin':
+                            header('Location: admin/dashboard.php');
+                            break;
+                        case 'provider':
+                            header('Location: provider/dashboard.php');
+                            break;
+                        case 'user':
+                        default:
+                            header('Location: user/dashboard.php');
+                            break;
                     }
-
-                    header('Location: dashbord.php');
                     exit();
                 }
             }
@@ -54,38 +63,16 @@ if (isset($_POST["btnlogin"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login - Astra Service</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
-    <style>
-        .auth-wrapper {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .auth-card {
-            width: 100%;
-            max-width: 420px;
-        }
-
-        .auth-title {
-            margin-bottom: 20px;
-        }
-
-        .auth-links {
-            margin-top: 12px;
-            text-align: center;
-            display: flex;
-            gap: 8px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-    </style>
 </head>
 <body>
     <main class="auth-wrapper">
         <section class="auth-card card">
+            <div class="auth-title">
+                <a class="brand-full" href="index.php">Astra Service</a>
+            </div>
+
             <?php if (!empty($success)): ?>
                 <div class="alert success"><?php echo htmlspecialchars($success); ?></div>
             <?php endif; ?>
@@ -95,7 +82,7 @@ if (isset($_POST["btnlogin"])) {
 
             <div class="auth-title">
                 <h1 class="h1">User Login</h1>
-                <p class="small">Sign in to continue to your dashboard.</p>
+                <p class="small">Sign in to book services and manage your requests.</p>
             </div>
 
             <form method="post" class="form" autocomplete="off">
