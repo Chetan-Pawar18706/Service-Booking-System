@@ -17,20 +17,20 @@ CREATE TABLE users (
 INSERT INTO users (username, email, password, role, phone, address)
 VALUES 
 ('admin', 'admin@gmail.com', MD5('admin123'), 'admin', '9876543210', 'Mumbai, Maharashtra'),
-('amit_sharma', 'amit@gmail.com', MD5('pass123'), 'provider', '9123456789', '123, MG Road, Bangalore, Karnataka'),
-('priya_patel', 'priya@gmail.com', MD5('pass123'), 'provider', '8987654321', '45, Court Road, Pune, Maharashtra'),
-('rajesh_plumber', 'rajesh@gmail.com', MD5('pass123'), 'provider', '9876543211', 'Dwarka, New Delhi'),
-('neha_electrician', 'neha@gmail.com', MD5('pass123'), 'provider', '9765432109', 'Sector 5, Gurgaon, Haryana'),
-('vikram_carpenter', 'vikram@gmail.com', MD5('pass123'), 'provider', '8765432198', 'Koramangala, Bangalore, Karnataka'),
-('sneha_cleaning', 'sneha@gmail.com', MD5('pass123'), 'provider', '9654321087', 'Salt Lake City, Kolkata, West Bengal'),
-('rohan_bhatia', 'rohan@bhatia.com', MD5('pass123'), 'user', '9112345678', 'Sector 7, Mumbai, Maharashtra'),
-('aisha_khan', 'aisha.khan@gmail.com', MD5('pass123'), 'user', '9887654321', 'Anna Nagar, Chennai, Tamil Nadu'),
-('rahul_verma', 'rahul.verma@gmail.com', MD5('pass123'), 'user', '9876543098', 'Jayanagar, Bangalore, Karnataka'),
-('prerna_singh', 'prerna.singh@gmail.com', MD5('pass123'), 'user', '8899776655', 'Sector 12, Noida, Uttar Pradesh'),
-('karan_gupta', 'karan.gupta@gmail.com', MD5('pass123'), 'user', '9765432087', 'Andheri East, Mumbai, Maharashtra'),
-('divya_mehra', 'divya.mehra@gmail.com', MD5('pass123'), 'user', '9654321876', 'Vile Parle, Mumbai, Maharashtra'),
-('arjun_nair', 'arjun.nair@gmail.com', MD5('pass123'), 'user', '9123456098', 'Fort Kochi, Kerala'),
-('sapna_iyer', 'sapna.iyer@gmail.com', MD5('pass123'), 'user', '9876543212', 'Bandra, Mumbai, Maharashtra');
+('amit_sharma', 'amit@gmail.com', MD5('amit123'), 'provider', '9123456789', '123, MG Road, Bangalore, Karnataka'),
+('priya_patel', 'priya@gmail.com', MD5('priya123'), 'provider', '8987654321', '45, Court Road, Pune, Maharashtra'),
+('rajesh_plumber', 'rajesh@gmail.com', MD5('rajesh123'), 'provider', '9876543211', 'Dwarka, New Delhi'),
+('neha_electrician', 'neha@gmail.com', MD5('neha123'), 'provider', '9765432109', 'Sector 5, Gurgaon, Haryana'),
+('vikram_carpenter', 'vikram@gmail.com', MD5('vikram123'), 'provider', '8765432198', 'Koramangala, Bangalore, Karnataka'),
+('sneha_cleaning', 'sneha@gmail.com', MD5('sneha123'), 'provider', '9654321087', 'Salt Lake City, Kolkata, West Bengal'),
+('rohan_bhatia', 'rohan@bhatia.com', MD5('rohan123'), 'user', '9112345678', 'Sector 7, Mumbai, Maharashtra'),
+('aisha_khan', 'aisha.khan@gmail.com', MD5('aisha123'), 'user', '9887654321', 'Anna Nagar, Chennai, Tamil Nadu'),
+('rahul_verma', 'rahul.verma@gmail.com', MD5('rahul123'), 'user', '9876543098', 'Jayanagar, Bangalore, Karnataka'),
+('prerna_singh', 'prerna.singh@gmail.com', MD5('prerna123'), 'user', '8899776655', 'Sector 12, Noida, Uttar Pradesh'),
+('karan_gupta', 'karan.gupta@gmail.com', MD5('karan123'), 'user', '9765432087', 'Andheri East, Mumbai, Maharashtra'),
+('divya_mehra', 'divya.mehra@gmail.com', MD5('divya123'), 'user', '9654321876', 'Vile Parle, Mumbai, Maharashtra'),
+('arjun_nair', 'arjun.nair@gmail.com', MD5('arjun123'), 'user', '9123456098', 'Fort Kochi, Kerala'),
+('sapna_iyer', 'sapna.iyer@gmail.com', MD5('sapna123'), 'user', '9876543212', 'Bandra, Mumbai, Maharashtra');
 
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
